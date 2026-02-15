@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:  Times, serif;
     box-sizing: border-box;
 }
 
@@ -59,4 +59,31 @@ body {
     text-align: center;
     gap: 5px;
     padding: 40px 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 10%;
+}
+
+.card {
+    background-color:#0f172a;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    gap: 60px;
+}
+
+.card li {
+    list-style: none;
+}
+
+.card h1 {
+    margin-bottom: 15px;
+    color: #38bdf8;
 }
