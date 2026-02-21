@@ -70,5 +70,17 @@ body {
     color: white;
     border-radius: 7px;
     font-size: 16px;
-    
+}
+
+.offered-servies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.offered-services {
+    flex: 0 0 33%;
+    text-align: center;
+    width: 300px;
+    padding: 40px;
 }
