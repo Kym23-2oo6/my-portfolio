@@ -1,75 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kym Portfolio</title>
-    <link rel="stylesheet" href="style.css">    
-</head>
-<body>
-    <main >
-        <section id="hero">
-            <div class="hero-content">
-                <h3>Hello!</h3>
-                <h1>Kym Brian Adayo Ancheta</h1>
-                <h2>Student/Aspiring Web Developer</h2>
-                <p>Hi there! I'm Kym and i practice building stylish and interactive websites!</p>
-                <a href="#pi">Discover Now</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kym Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-            <img src="/assets/images/KYM_BRIAN_ANCHETA-removebg-preview-cropped.png" alt="Kym Brian Ancheta Photo" >
-        </section>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="">&lt;Kym&#47;&gt;</a>
+      </div>
 
-    
-        <div class="personal-info-container" id="pi">
-            <h3>About Me</h3>
-            <h1>My Personal Information</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis non fugit dolores iste dolorum quaerat quos esse nisi. Repellendus cumque voluptatum hic impedit, nisi illum consequatur ratione perspiciatis inventore.</p>
-            <button>View Full Details</button>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="" class="link">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Experience</a></li>
+          <li><a href="">Tech Stack</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div class="nav-right">
+        <button class="toggle-dark-mode" id="themeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger-icon" id="hamburgerIcon"></button>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="container home-container">
+        <span>Hi, I am</span>
+        <h1>Kym Brian Ancheta</h1>
+        <h2>Student / Aspiring Web Developer</h2>
+        <p>
+          Currently a Bachelor of Science in Information Systems college student
+          in Taguig City University. Soon to become a Web Developer.
+        </p>
+
+        <div class="cta-buttons">
+          <button class="cta">View My Projects</button>
         </div>
-
-        <div class="offered-services-container">
-            <h2>My Offered Services</h2>
-            <p>As I continue on learning programming, these are the languages and framework that I am knowledgeable about so far.</p>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
-            <div class="offered-services">
-                <span>&#9998;</span>
-                <h4>Web Design</h4>
-                <p>I can design webstites based on the clients choice.</p>
-            </div>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+          <a href=""><i class="fa-solid fa-file"></i></a>
         </div>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <img
+          src="../kym-personal-portfolio/assets/images/KymFormalPic2026.jpg"
+          alt="Formal picture of Kym Brian Ancheta p"
+        />
+        <p>
+          I am Kym Brian Ancheta, a college student from Taguig City University
+          in a Bachelor of Science in Information Systems program. I am learning
+          web development and I know the basics of HTML, CSS, and a bit about
+          Javascript. I also know a little about Java.
+        </p>
 
-    </main>
+        <p>
+          Honestly, I want to be a Full-stack Developer someday, i am just
+          familiarizing myself at front-end development then later proceed to
+          backend, databases, devOps, and tools.
+        </p>
+      </div>
+    </section>
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+      </div>
+    </section>
+    <section class="section tech-stack" id="tech-stack">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="tech-container">
+          <div class="tech-item">
+            <h3>Backend</h3>
+            <div class="tech">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              />
+              <p class="progress-bar">Progress</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <h3>Frontend</h3>
+            <div class="tech">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              />
 
+              <p class="progress-bar">Progress</p>
+            </div>
+            <div class="tech">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              />
 
-    <footer>Kym Brian Ancheta, 2026 | Built with HTML, CSS, and Javascript</footer>
+              <p class="progress-bar">Progress</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <h3>Database</h3>
+            <div class="tech">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+              />
 
-    <script src="script.js"></script>
-</body>
+              <p class="progress-bar">Progress</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <h3>DevOps</h3>
+            <div class="tech">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              />
 
+              <p class="progress-bar">Progress</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form>
+          <label for="">Name</label>
+          <input type="text" />
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
