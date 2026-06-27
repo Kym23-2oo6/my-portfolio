@@ -3,6 +3,7 @@
   --primary: #12b0f9;
   --primary-hover: #11a7ec;
   --primary-light: #2eb7f7;
+  --hover-text: #e4f2f8;
 
   /*Header*/
   --header: #e8f3f2;
@@ -45,6 +46,8 @@ header {
   align-items: center;
   background: var(--header);
   padding: 10px 5%;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -69,6 +72,11 @@ header {
 .nav-links .link {
   text-decoration: none;
   color: var(--text-secondary);
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  color: var(--primary);
 }
 
 .nav-links .active {
@@ -84,6 +92,12 @@ header {
 .fa-bars {
   font-size: 1.5em;
   color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.fa-moon:hover,
+.fa-bars:hover {
+  transform: scale(1.1);
 }
 
 .hamburger-icon {
@@ -96,6 +110,13 @@ header {
 
 .container {
   min-height: 100vh;
+  padding: 50px;
+}
+
+.sub-main-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 /*Home Section*/
@@ -137,6 +158,12 @@ header {
   border: none;
   background: var(--primary);
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--primary-hover);
+  color: white;
 }
 
 .social-icons {
@@ -151,35 +178,125 @@ header {
 }
 
 /*About Section*/
-.about-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+
+.about-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
+/*Left Side Image*/
 .about-img {
-  width: 500px;
-  height: auto;
-  float: left;
-  margin-right: 50px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/*Right Side */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-parag {
   font-size: 1.2rem;
-}
-
-.about-parag-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: center;
-  padding: 20px;
-  max-width: 500px;
-  height: 450px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+  width: 100%;
 }
 
 .about-btn {
-  padding: 16px 24px;
+  padding: 12px 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary);
   font-size: 1rem;
-  margin: 0 auto;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: var(--hover-text);
+}
+
+/*Tech Stack Section*/
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.tech-item {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tech-stack-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.tech {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tech-image {
+  width: 100%;
+  height: 100px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid black;
+}
+
+.progress-percent.java {
+  width: 5%;
+  color: white;
+  background-color: var(--primary);
+  height: 100%;
+  border-radius: 50px;
+}
+.progress-percent.html {
+  width: 95%;
+  color: white;
+  background-color: var(--primary);
+  height: 100%;
+  border-radius: 50px;
+}
+.progress-percent.css {
+  width: 81%;
+  color: white;
+  background-color: var(--primary);
+  height: 100%;
+  border-radius: 50px;
+}
+.progress-percent.mysql {
+  width: 5%;
+  color: white;
+  background-color: var(--primary);
+  height: 100%;
+  border-radius: 50px;
+}
+.progress-percent.github {
+  width: 50%;
+  color: white;
+  background-color: var(--primary);
+  height: 100%;
+  border-radius: 50px;
 }
